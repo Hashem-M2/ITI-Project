@@ -1,7 +1,7 @@
 var btn = document.getElementById("btt");
 
 function redirect() {
-  location.replace("login.html","index.html");
+  location.replace("login.html","").assign("index.html");
 }
 
 var userid = document.getElementById("userid");
