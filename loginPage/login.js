@@ -1,7 +1,7 @@
 var btn = document.getElementById("btt");
 
 function redirect() {
-  location.assign("https://hashem-m2.github.io/");
+  location.assign("../index.html");
 }
 
 var userid = document.getElementById("userid");
