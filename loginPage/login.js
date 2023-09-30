@@ -1,7 +1,7 @@
 var btn = document.getElementById("btt");
 
 function redirect() {
-  location.assign("hashem-m2.github.io/ITI-Project");
+  location.replace("login.html","index.html");
 }
 
 var userid = document.getElementById("userid");
