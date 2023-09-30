@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <div class="container">
+      <div id="btt" onclick="redirect()">
+         <span class="dot"></span>
+        <span class="x">x</span>
+    </div>
+        <form action=""             >
+            <h1 class="header_text">Login to your account</h1>
+            <div class="account">
+                <span>Don't have an account? </span>
+                <a href="">Sign up!</a>
+            </div>
+            <div class="input">
+                <input id ="userid" type="text" placeholder="User Name" >
+                <input id="pass" type="password" placeholder="Password" >
+            </div>
+            <p class="remember">
+         
+              <span><input type="checkbox"></span><span> Remember User Name</span>
+            
+        
+                <a href="">Lost password?</a>
+            </p>
+            <button onclick="required(),cooki()" class="btn">log in</button>
+        </form>
+    </div>
+    <script src="./login.js"></script>
+</body>
+</html>

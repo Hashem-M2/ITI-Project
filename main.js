@@ -1,0 +1,1 @@
+document.getElementsByClassName("tutorial")[0].onclick=function start(){window.open("https://maharatech.gov.eg/mod/page/view.php?id=8782")};

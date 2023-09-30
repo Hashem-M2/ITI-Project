@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OurWebSite</title>
+  <link rel="stylesheet" href="./register.css">
+  <style>
+    pre {
+      color: white;
+      font-family: sans-serif;
+      font-size: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    section {
+      text-align: center;
+      font-weight: bold;
+      font-size: 25px;
+      padding: 50px 0px 0 50px;
+
+    }
+
+    p,
+    a {
+      font-size: 15px;
+      text-decoration: none;
+      text-align: center;
+      opacity: 0.7;
+    }
+
+    input,
+    select {
+      height: 40px;
+      width: 350px;
+      border-radius: 5px;
+      margin: 20px;
+    }
+
+    .dot {
+      height: 15px;
+      width: 15px;
+      background-color: white;
+      border-radius: 50%;
+      border: red solid 1px;
+      color: red;
+      display: inline-block;
+      padding: 2px;
+      font-weight: 0.5;
+    }
+
+    label {
+      margin: 10px;
+      opacity: 0.7;
+    }
+
+    span {
+      opacity: 0.7;
+
+    }
+
+    a:hover {
+      background-color: white;
+      color: #8C002A;
+    }
+
+    .inactive {
+      display: none;
+    }
+    .inactived{
+      display: none;
+    }
+  </style>
+
+</head>
+<body>
+
+    <!-- register page  -->
+    <form action="">
+      <header style="background-color: #8C002A;padding: 20px;">
+        <pre>Mahara Tech                                                                                                                                           <a href="https://maharatech.gov.eg/">Home  </a>/<a> Log in</a> </pre>
+      </header>
+      <div style="background-color: #f8f9fa;">
+  
+  
+        <section>New account </section>
+        <p> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Have an account? <a style="color:#8C002A;opacity: 1;" href="">Login</a>
+        </p>
+        <div style="text-align: center;color: #8C002A; cursor: pointer;" onclick="disappear4()">Choose your username and
+          password </div>
+        <div class="container1">
+          <div style="text-align: center;"><label for="Username"> Username <span class="dot" style="opacity: 1;">!</span>
+            </label><input id="user" onblur="validation()" type="text"></div>
+          <div class="inactive" id="final" style=" color: red;
+          width: 50%;
+          margin-right: auto;
+          margin-left: auto;">please enter username contain at least 5 characters</div>
+          <p style="margin-right: auto;margin-left: auto;width:50%">The password must have at least 8 characters,at
+            <br>least 1 special chatacter(s) such as *,-,or # </p>
+          <div style="text-align: center;"><label for="Password"> Password <span class="dot" style="opacity: 1;">!</span>
+            </label><input id="pass" onblur="validpass()"  type="text"></div>
+            <div class="inactived" id="fin" style=" color: red;
+          width: 50%;
+          margin-right: auto;
+          margin-left: auto;">Check your password again</div>
+        </div>
+        <hr width="450px" opacity="0.7">
+        <div style="text-align: center;color: #8C002A; cursor: pointer;" onclick="disappear()">More details </div>
+        <div class="container1">
+          <div style="text-align: center;"><label for="Email address"> Email address <span class="dot"
+                style="opacity: 1;">!</span> </label><input type="text"></div>
+          <div style="text-align: center;"><label for="Email again"> Email again <span class="dot"
+                style="opacity: 1;">!</span> </label><input type="text"></div>
+          <div style="text-align: center;"><label for="First name"> First name <span class="dot"
+                style="opacity: 1;">!</span> </label><input type="text"></div>
+          <div style="text-align: center;"><label for="Sur name"> Sur name <span class="dot" style="opacity: 1;">!</span>
+            </label><input type="text"></div>
+          <div style="text-align: center;"><label for="City/town"> City/town </label><input type="text"></div>
+          <div style="text-align: center;"><label for="City/town"> Country </label><select value="Egypt">
+              <option value="Egypt">Egypt</option>
+              <option value="Saudi">Saudi</option>
+              <option value="Emraites">Emraites</option>
+            </select></div>
+        </div>
+        <hr width="450px" opacity="0.7">
+        <div style="text-align: center;color: #8C002A; cursor: pointer;" onclick="disappear1()">More details(2) </div>
+        <div class="container2">
+          <div style="text-align: center;"><label for="Reference Code">Reference Code </label><input type="text"></div>
+          <div style="text-align: center;"><label for="Email address"> National ID <span class="dot"
+                style="opacity: 1;">!</span> </label><input type="text"></div>
+        </div>
+        <hr width="450px" opacity="0.7">
+        <div style="text-align: center;color: #8C002A;cursor: pointer;" onclick="disappear2()">Academic Information (For
+          Egyptians Only) </div>
+        <div class="container2">
+          <div style="text-align: center;"><label for="City/town"> University </label><select value="ASU">
+              <option value="ASU">Ain Shams University</option>
+              <option value="CU">Cairo University</option>
+              <option value="SU">Sohag University</option>
+            </select></div>
+          <div style="text-align: center;"><label for="City/town"> Faculty </label><select value="Engineering">
+              <option value="Engineering">Engineering</option>
+              <option value="ART">Art</option>
+              <option value="Science">Science</option>
+            </select></div>
+        </div>
+        <hr width="450px" opacity="0.7">
+        <center><button id="btn1" type="submit"
+            style="color:white;background-color: #8C002A;border: blueviolet 1px solid;border-radius: 4px;padding: 10px;margin: 5px;">
+            <a href="">Create my new account</a></button><button
+            style="background-color: gray;color: white;padding: 10px;border-radius: 4px;border: grey 2px solid;"><a
+              href="">Cancel</a></button></center>
+  
+      </div>
+  
+    </form>
+    <script src="./register.js"></script>
+</body>
+
+</html>  
