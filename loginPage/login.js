@@ -1,7 +1,7 @@
 var btn = document.getElementById("btt");
 
 function redirect() {
-  location.assign("./index.html");
+  location.assign("./ITI-Project/index.html");
 }
 
 var userid = document.getElementById("userid");
